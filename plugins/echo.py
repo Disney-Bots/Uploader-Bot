@@ -20,12 +20,16 @@ from hachoir.parser import createParser
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant
 from .functions.ran_text import random_char
-
+from .functions.forcesub import handle_force_subscribe
 
 @Client.on_message(filters.private & filters.regex(pattern=".*https.*"))
 async def echo(bot, update):
     await add_user_to_database(bot, update)
     logger.info(update.from_user)
+    if Config.UPDATES_CHANNEL:
+      fsub = await handle_force_subscribe(bot, update)
+      if fsub == 400:
+        return
     url = update.text
     youtube_dl_username = None
     youtube_dl_password = None
@@ -94,7 +98,7 @@ async def echo(bot, update):
     logger.info(command_to_exec)
     chk = await bot.send_message(
             chat_id=update.chat.id,
-            text=f'ᴘʀᴏᴄᴇssɪɴ ʏᴏᴜʀ ʟɪɴᴋ ⌛',
+            text=Translation.CHECK_LINK,
             disable_web_page_preview=True,
             reply_to_message_id=update.message_id
           )
@@ -200,17 +204,17 @@ async def echo(bot, update):
                 cb_string = "{}|{}|{}|{}".format("audio", "320k", "mp3", randem)
                 inline_keyboard.append([
                     InlineKeyboardButton(
-                        " Mᴘ𝟹 " + "(" + "64 kbps" + ")", callback_data=cb_string_64.encode("UTF-8")),
+                        " Mᴘ𝟹 " + "(" + "64 ᴋʙᴘs" + ")", callback_data=cb_string_64.encode("UTF-8")),
                     InlineKeyboardButton(
-                        " Mᴘ𝟹 " + "(" + "128 kbps" + ")", callback_data=cb_string_128.encode("UTF-8"))
+                        " Mᴘ𝟹 " + "(" + "128 ᴋʙᴘs" + ")", callback_data=cb_string_128.encode("UTF-8"))
                 ])
                 inline_keyboard.append([
                     InlineKeyboardButton(
-                        " Mᴘ𝟹 " + "(" + "320 kbps" + ")", callback_data=cb_string.encode("UTF-8"))
+                        " Mᴘ𝟹 " + "(" + "320 ᴋʙᴘs" + ")", callback_data=cb_string.encode("UTF-8"))
                 ])
                 inline_keyboard.append([                 
                     InlineKeyboardButton(
-                        "ᴄʟᴏsᴇ", callback_data='close')               
+                        "Cʟᴏsᴇ", callback_data='close')               
                 ])
         else:
             format_id = response_json["format_id"]
@@ -221,11 +225,11 @@ async def echo(bot, update):
                 "video", format_id, format_ext, randem)
             inline_keyboard.append([
                 InlineKeyboardButton(
-                    "Video",
+                    "SVideo",
                     callback_data=(cb_string_video).encode("UTF-8")
                 ),
                 InlineKeyboardButton(
-                    "File",
+                    "DFile",
                     callback_data=(cb_string_file).encode("UTF-8")
                 )
             ])
@@ -282,11 +286,11 @@ async def echo(bot, update):
             "video", "OFL", "ENON")
         inline_keyboard.append([
             InlineKeyboardButton(
-                "Video",
+                "SVideo",
                 callback_data=(cb_string_video).encode("UTF-8")
             ),
             InlineKeyboardButton(
-                "File",
+                "DFile",
                 callback_data=(cb_string_file).encode("UTF-8")
             )
         ])
