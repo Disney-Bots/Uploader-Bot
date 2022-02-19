@@ -1,3 +1,4 @@
+
 {
   "name": "Uploader Bot",
   "description": "Telegram Bot to Upload Zee5 Url to Telegram as File and Video.",
@@ -52,6 +53,11 @@
     },
     "HTTP_PROXY": {
       "description": "proxy for accessing youtube-dl in GeoRestricted Areas. Get your own proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061",
+      "value": "",
+      "required": false
+    },
+    "UPDATES_CHANNEL": {
+      "description": "Your Updates Channel ID To ForceSub , Must Add Bots As Admin in Update Channel",
       "value": "",
       "required": false
     }
