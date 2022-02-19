@@ -29,6 +29,8 @@ async def handle_force_subscribe(bot, message):
                 [
                     [
                         InlineKeyboardButton(" Jᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ", url=invite_link.invite_link)
+                    ],[
+                         InlineKeyboardButton(' ᴄʟᴏsᴇ', callback_data='close')
                     ]
                 ]
             ),
