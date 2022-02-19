@@ -41,10 +41,10 @@ async def viewthumbnail(bot, update):
         await bot.send_photo(
         chat_id=update.chat.id,
         photo=thumbnail,
-        caption=f"Yᴏᴜʀ ᴄᴜʀʀᴇɴᴛ sᴀᴠᴇᴅ ᴛʜᴜᴍʙɴᴀɪʟ 🦠",
+        caption=f"Yᴏᴜʀ ᴄᴜʀʀᴇɴᴛ ᴛʜᴜᴍʙɴᴀɪʟ ꨄ︎",
         reply_to_message_id=update.message_id)
     else:
-        await update.reply_text(text=f"Nᴏ Tʜᴜᴍʙɴᴀɪʟ ғᴏᴜɴᴅ 🤒")
+        await update.reply_text(text=f"Nᴏ Tʜᴜᴍʙɴᴀɪʟ ғᴏᴜɴᴅ 😟")
 
 async def Gthumb01(bot, update):
     thumb_image_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
