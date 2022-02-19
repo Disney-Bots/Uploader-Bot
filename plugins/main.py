@@ -33,11 +33,11 @@ Pᴏᴡᴇʀᴇᴅ ʙʏ : [ᴅɪsɴᴇʏ ʙᴏᴛs](https://telegram.me/Disney_B
  
 """
     ABOUT_TEXT = """
-**Mʏ ɴᴀᴍᴇ** : [ᴜᴘʟᴏᴀᴅᴇʀ x ʙᴏᴛ](https://t.me/UploaderrXRobot)
+**Mʏ ɴᴀᴍᴇ** : [ᴜʀʟ ᴜᴘʟᴏᴀᴅᴇʀ ᴘʀᴏ](https://t.me/UploaderrXRobot)
 
 **Cʜᴀɴɴᴇʟ** : [ᴅɪsɴᴇʏ ʙᴏᴛs](https://t.me/Disney_Bots)
 
-**Vᴇʀꜱɪᴏɴ** : [2.0 ʙᴇᴛᴀ](https://t.me/UploaderrXRobot)
+**Vᴇʀꜱɪᴏɴ** : [2.0.1 ʙᴇᴛᴀ](https://t.me/UploaderrXRobot)
 
 **Sᴏᴜʀᴄᴇ** : [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/tamilanbots)
 
