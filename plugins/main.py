@@ -98,7 +98,7 @@ Pᴏᴡᴇʀᴇᴅ ʙʏ : [ᴅɪsɴᴇʏ ʙᴏᴛs](https://telegram.me/Disney_B
     BAY_UPLOAD = " ᴜᴘʟᴏᴀᴅɪɴɢ📤 \n\n To  bayfiles.com "
     GO_FILE_UPLOAD = " 📤ᴜᴘʟᴏᴀᴅɪɴɢ📤 \n\n To  gofile.io "
     DOWNLOAD_START = "📄 ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ᴜɴɪᴛs ɪᴛ's ᴄᴏᴍᴘʟᴇᴛᴇᴅ ⏳\n\n📥 ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ sᴛᴀʀᴛᴇᴅ..."
-    UPLOAD_START = "📤 ᴜᴘʟᴏᴀᴅɪɴɢ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ..."
+    UPLOAD_START = "<b> 📤 Uᴘʟᴏᴀᴅɪɴɢ Pʟᴇᴀsᴇ Wᴀɪᴛ.. </b>"
     RCHD_BOT_API_LIMIT = "sɪᴢᴇ ɢʀᴇᴀᴛᴇʀ ᴛʜᴀɴ ᴍᴀxɪᴍᴜᴍ ᴀʟʟᴏᴡᴇᴅ sɪᴢᴇ *500ᴍʙ). ɴᴇᴠᴇʀᴛʜʟᴇss, ᴛʀʏɪɴɢ ᴛᴏ ᴜᴘʟᴏᴀᴅ."
     RCHD_TG_API_LIMIT = "ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ɪɴ {} sᴇᴄᴏɴᴅs.\nᴅᴇᴛᴇᴄᴛᴇᴅ ғɪʟᴇ sɪᴢᴇ: {}\nᴅᴏʀʀʏ. ʙᴜᴛ, ɪ ᴄᴀɴɴᴏᴛ ᴜᴘʟᴏᴀᴅ ғɪʟᴇs ɢʀᴇᴀᴛᴇʀ ᴛʜᴀɴ 2GB ᴅᴜᴇ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴍ ᴀᴘɪ ʟɪᴍɪᴛᴀᴛɪᴏɴ."
     AFTER_SUCCESSFUL_UPLOAD_MSG = " ᴊᴏɪɴ : https://t.me/Disney_Bots\nғᴏʀ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛs"
