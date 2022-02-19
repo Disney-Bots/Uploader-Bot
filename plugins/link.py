@@ -223,7 +223,7 @@ async def download_coroutine(bot, session, url, file_name, chat_id, message_id, 
         await bot.edit_message_text(
             chat_id,
             message_id,
-            text="""Initiating Download
+            text="""**DᴏᴡɴʟᴏᴀᴅɪɴG**
 
 **🔗 Uʀʟ :** {}
 
